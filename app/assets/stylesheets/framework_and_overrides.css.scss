@@ -1,51 +1,107 @@
-// Temporary workaround for Rails 4.1.2 pending releaase of bootstrap-sass 3.1.2
-//= depend_on_asset "bootstrap/glyphicons-halflings-regular.eot"
-//= depend_on_asset "bootstrap/glyphicons-halflings-regular.svg"
-//= depend_on_asset "bootstrap/glyphicons-halflings-regular.ttf"
-//= depend_on_asset "bootstrap/glyphicons-halflings-regular.woff"
+@import "bootstraps";
+@import "theme";
+@import "magpop";
+@import "fontawe";
 
-// import the CSS framework
-@import "bootstrap";
+$peepgreen:   hsla(92, 45.2174%, 54.9020%, 1.0000);
+$transpeepgreen: hsla(92, 45.2174%, 54.9020%, 0.8);
 
-// make all images responsive by default
-img {
-  @extend .img-responsive;
-  margin: 0 auto;
-  }
-// override for the 'Home' navigation link
-.navbar-brand {
-  font-size: inherit;
-  }
+.navbar .navbar-nav a {
+  border-radius: 3px;
+}
+.cbp-af-header h1 a {
+  background-image: image-url("logo_white.png");
+  min-width: 200px;
+  min-height: 56px;
+}
 
-// THESE ARE EXAMPLES YOU CAN MODIFY
-// create your own classes
-// to make views framework-neutral
-.column {
-  @extend .col-md-6;
-  @extend .text-center;
+.cbp-af-header.cbp-af-header-shrink h1 a {
+  background-image: image-url("logo_green.png");
+  min-width: 185px;
+  min-height: 50px;
+  -webkit-transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+
+.cbp-af-header.cbp-af-header-shrink .nav a {
+	margin-top: 15px;
+	line-height: 10px;
+	color: black;
+  &:hover {
+    color: $transpeepgreen;
   }
-.form {
-  @extend .col-md-6;
+  &:focus {
+    color: $transpeepgreen;
   }
-.form-centered {
-  @extend .col-md-6;
-  @extend .text-center;
+}
+
+.cbp-af-inner .navbar .navbar-nav .current > a {
+	color: #FFFFFF !important;
+  &:hover {
+    background: $transpeepgreen;
   }
-.submit {
-  @extend .btn;
-  @extend .btn-primary;
-  @extend .btn-lg;
+}
+
+.cbp-af-header.cbp-af-header-shrink .navbar .navbar-nav .current > a {
+  color: #FFFFFF !important;
+  background: $peepgreen;
+  &:hover {
+    background: $transpeepgreen;
   }
-// apply styles to HTML elements
-// to make views framework-neutral
-main {
-  @extend .container;
-  background-color: #eee;
-  padding-bottom: 80px;
+}
+
+.navbar .nav > li > a:hover, .navbar .nav > li > a:focus {
+  color: $peepgreen;
+}
+
+.cbp-af-header .nav a.signup {
+  color: #ccc !important;
+}
+
+#intro .carousel-caption-center p, #intro-video .carousel-caption-center p {
+  text-align: left !important;
+  margin: 0px 20em 0px 0px;
+}
+
+#intro .carousel-caption-center h1, #intro-video .carousel-caption-center h1 {
+  text-align: left !important;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  font-size: 2.7em;
+}
+
+span.gr {
+  color: $peepgreen;
+}
+
+#intro .carousel-caption-center, #intro-video .carousel-caption-center {
+  margin: auto 20px;
+}
+$darkerpeep: hsla(97, 46.4286%, 43.9216%, 1.0000);
+
+#intro .carousel-caption-center .btn:hover, #intro-video .carousel-caption-center .btn:hover {
+  background: $darkerpeep;
+}
+
+.login-part button[type='submit']:hover {
+  background: $darkerpeep;
+}
+
+.introbottomcontainer {
+  height: 200px;
+  margin-top: -200px;
+  position: absolute;
+  left: 0px;
   width: 100%;
-  margin-top: 51px; // accommodate the navbar
+  background: #89c058;
+  z-index: 58;
+  overflow: visible;
+  h1 {
+    font-weight: 800;
+    line-height: 1.1;
+    color: #fff;
+    letter-spacing: -0.015em;
+    padding-top: 30px;
   }
-section {
-  @extend .row;
-  margin-top: 20px;
-  }
+}

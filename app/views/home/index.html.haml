@@ -1,1 +1,325 @@
-%h3 Home
+.preloader
+  .spinner
+    .bounce1
+    .bounce2
+    .bounce3
+.navbar-wrapper.cbp-af-header
+  .container
+    .navbar.cbp-af-inner{:role => "navigation"}
+      .container
+        .navbar-header
+          %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %h1
+            %a.navbar-brand.scroll{:href => "#intro"}
+        .navbar-collapse.collapse
+          %ul.nav.navbar-nav.pull-right
+            %li
+              %a{:href => "#intro"} Home
+            %li
+              %a{:href => "#about"} About
+            %li
+              %a{:href => "#featured1"} Jobs
+            %li.hidden-sm
+              %a{:href => "#testimonials"} Contact Us
+            / %li
+            /   %a{:href => "#pricing"} Pricing
+            %li
+              %a.hidden-sm.login{:href => "#"} Login
+            %li
+              %a.signup{:href => "#"} Sign up
+#intro
+  .item.background-cover{:style => "background: url('img/bg-featuredapp1.jpg')"}
+    .container
+      .row
+        .carousel-caption-center.colour-white
+          %h1 
+            %span.gr My 
+            %span pictures. 
+            %span.gr your 
+            %span pictures.
+            %br
+            %span.gr one 
+            %span place.
+          %p Donec sed odio dui. Etiam porta sem malesuada magna sem mollis sed odio dui malesuada euismod.
+          %p
+            %a.btn.btn-lg.btn-primary.signup{:href => "#", :role => "button"} Get started
+    .overlay-bg
+.introbottomcontainer
+  .container
+    .row
+      .col-md-6
+        %h1 GET INVITED
+        %h2 Sign up for our newsletter
+      .col-md-6
+        
+%section#about.content.text-center.light
+  .container
+    .row
+      .col-lg-12.overlay-text
+        %h2 Prestige helps you escape the daily grind
+    .row
+      .col-sm-4.text-center.overlay-text.icons
+        .icon-wrapper
+          %i.fa.fa-cloud.icon-large
+        %h3 Sky's the limit
+        %p Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+      .col-sm-4.text-center.overlay-text.icons
+        .icon-wrapper
+          %i.fa.fa-rocket.icon-large
+        %h3 Big Ideas
+        %p Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+      .col-sm-4.text-center.overlay-text.icons
+        .icon-wrapper
+          %i.fa.fa-lightbulb-o.icon-large
+        %h3 Creative Execution
+        %p Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+  .overlay-bg.light
+%section#featured1.dark.with-bg
+  .container
+    .row
+      .col-sm-5.overlay-text
+        .vertical-align
+          %h2 Work to your own schedule
+          %p Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+  .overlay-bg.black
+%section#featured2.featured
+  .container
+    .row
+      .col-sm-5.text-center
+        %img.margin-top.img-responsive{:alt => "Generic placeholder image", "data-scrollreveal" => "move 100px and enter from the left after 0.55s", :src => "img/imac.png", :width => "429"}
+      .col-sm-5.col-sm-offset-1
+        .vertical-align
+          %h2 Effortless time management
+          %p Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+%section#testimonials.dark
+  .page-header.text-center
+    %h3 Testimonials
+    %h2 What People are saying
+  .container
+    .row
+      .col-md-offset-2.col-md-8
+        #quote-carousel.carousel.slide{"data-ride" => "carousel"}
+          %ol.carousel-indicators
+            %li.active{"data-slide-to" => "0", "data-target" => "#quote-carousel"}
+            %li{"data-slide-to" => "1", "data-target" => "#quote-carousel"}
+            %li{"data-slide-to" => "2", "data-target" => "#quote-carousel"}
+          .carousel-inner
+            .item.active
+              %blockquote
+                .row
+                  .col-sm-3.text-center
+                    %img.img-circle{:src => "img/user-avatar1.jpg"}
+                  .col-sm-9
+                    %p "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!"
+                    %small
+                      David Parrelli -
+                      %a{:href => "http://www.twitter.com/dparrelli", :target => "_blank"} @dparrelli
+            .item
+              %blockquote
+                .row
+                  .col-sm-3.text-center
+                    %img.img-circle{:src => "img/user-avatar2.jpg"}
+                  .col-sm-9
+                    %p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris."
+                    %small
+                      Working Nomads -
+                      %a{:href => "http://www.workingnomads.co", :target => "_blank"} @workingnomads
+            .item
+              %blockquote
+                .row
+                  .col-sm-3.text-center
+                    %img.img-circle{:src => "img/user-avatar3.jpg"}
+                  .col-sm-9
+                    %p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium."
+                    %small
+                      Working Nomads -
+                      %a{:href => "http://www.workingnomads.co", :target => "_blank"} @workingnomads
+          %a.left.carousel-control.visible-md.visible-lg{"data-slide" => "prev", :href => "#quote-carousel"}
+            %i.fa.fa-chevron-left
+          %a.right.carousel-control.visible-md.visible-lg{"data-slide" => "next", :href => "#quote-carousel"}
+            %i.fa.fa-chevron-right
+%section#gallery
+  .page-header.text-center
+    %h3 Screenshots
+    %h2 Here's a sneak peek
+  .container
+    .row
+      .col-md-12
+        #owl-example.owl-carousel
+          .item
+            %a.popup-gallery{:href => "img/thumbs/thumb1.jpg"}
+              %img{:alt => "Prestige Portfolio Thumbnail Image", :src => "img/thumbs/thumb1.jpg"}
+          .item
+            %a.popup-gallery{:href => "img/thumbs/thumb2.jpg"}
+              %img{:alt => "Prestige Portfolio Thumbnail Image", :src => "img/thumbs/thumb2.jpg"}
+          .item
+            %a.popup-gallery{:href => "img/thumbs/thumb3.jpg"}
+              %img{:alt => "Prestige Portfolio Thumbnail Image", :src => "img/thumbs/thumb3.jpg"}
+          .item
+            %a.popup-gallery{:href => "img/thumbs/thumb4.jpg"}
+              %img{:alt => "Prestige Portfolio Thumbnail Image", :src => "img/thumbs/thumb4.jpg"}
+          .item
+            %a.popup-gallery{:href => "img/thumbs/thumb5.jpg"}
+              %img{:alt => "Prestige Portfolio Thumbnail Image", :src => "img/thumbs/thumb5.jpg"}
+          .item
+            %a.popup-gallery{:href => "img/thumbs/thumb6.jpg"}
+              %img{:alt => "Prestige Portfolio Thumbnail Image", :src => "img/thumbs/thumb6.jpg"}
+%section#pricing.dark
+  .page-header.text-center
+    %h3 Pricing
+    %h2 Pay as you grow
+  .container
+    .row
+      .plans
+        .col-xs-12.col-sm-6.col-md-3
+          .plan{"data-scrollreveal" => "enter over 1s"}
+            .plan-title
+              %h2 Beginner
+              %h3
+                %sup> $
+                0
+                %sub / month
+            %ul.plan-features
+              %li 1 user
+              %li 5 projects
+              %li 2GB storage
+            .plan-cta
+              %p.plan-buy
+                %a.btn{:href => "index.html"} Select plan
+        .col-xs-12.col-sm-6.col-md-3
+          .plan.featured{"data-scrollreveal" => "enter over 1s"}
+            .plan-title
+              %h2 Advanced
+              %h3
+                %sup> $
+                47
+                %sub / month
+            %ul.plan-features
+              %li
+                %strong 5 users
+              %li 15 projects
+              %li 20GB storage
+            .plan-cta
+              %p.plan-buy
+                %a.btn{:href => "index.html"} Select plan
+        .col-xs-12.col-sm-6.col-md-3
+          .plan.featured{"data-scrollreveal" => "enter over 1s"}
+            .plan-title
+              %h2 Pro
+              %h3
+                %sup> $
+                147
+                %sub / month
+            %ul.plan-features
+              %li
+                %strong 50 users
+              %li Unlimited projects
+              %li Unlimited storage
+            .plan-cta
+              %p.plan-buy
+                %a.btn{:href => "index.html"} Select plan
+        .col-xs-12.col-sm-6.col-md-3
+          .plan{"data-scrollreveal" => "enter over 1s"}
+            .plan-title
+              %h2 Enterprise
+              %h3
+                %sup> $
+                199
+                %sub / month
+            %ul.plan-features
+              %li
+                %strong Unlimited users
+              %li Unlimited projects
+              %li Unlimited storage
+            .plan-cta
+              %p.plan-buy
+                %a.btn{:href => "index.html"} Select plan
+%section.cta.text-center
+  .container
+    .row
+      .col-lg-12
+        %h2 Start freelancing now.
+        %p
+          %a.btn.signup{:href => "#", :role => "button"} Get started
+%footer#contact.footer
+  .container
+    .row
+      .col-lg-12
+        .col-sm-3.col-md-3
+          .footer-logo
+            %h2 Prestige
+            %p
+              1024 Main Street, Vancouver BC
+              %br +1 (123) 456-7890
+            %br
+              %p.muted © 2013 Prestige Inc.
+              %a{:href => "#"} Terms of Service
+              %a{:href => "#"} Privacy
+        .col-sm-3.col-md-3
+          %h3 Product
+          %ul.list-unstyled
+            %li
+              %a{:href => "#"} Product for iOS
+            %li
+              %a{:href => "#"} Product for Android
+            %li
+              %a{:href => "#"} Product for Windows
+        .col-sm-3.col-md-3
+          %h3 Company
+          %ul.list-unstyled
+            %li
+              %a{:href => "#"} About Us
+            %li
+              %a{:href => "#"} Our Team
+            %li
+              %a{:href => "#"}
+                Jobs&emsp;
+                %span.label.label-info We're hiring!
+        .col-sm-3.col-md-3
+          %h3 Documentation
+          %ul.list-unstyled
+            %li
+              %a{:href => "#"} Product Help
+            %li
+              %a{:href => "#"} Developer API
+            %li
+              %a{:href => "#"} Product Markdown
+    .row
+      .col-lg-12.text-center
+        %a.icon{:href => "http://www.twitter.com/dparrelli", :target => "_blank"}
+          %i.fa.fa-twitter
+        %a.icon{:href => "#", :target => "_blank"}
+          %i.fa.fa-facebook
+        %a.icon{:href => "http://www.dribbble.com/dparrelli", :target => "_blank"}
+          %i.fa.fa-dribbble
+        %a.icon{:href => "http://www.workingnomads.co", :target => "_blank"}
+          %i.fa.fa-globe
+#login.overlay.overlay-content
+  %button.overlay-close{:type => "button"} Close
+  %section.login-part
+    %p.login-overlay
+      Log In
+    %form{:method => "post"}
+      %input.form-control{:name => "u", :placeholder => "Email", :required => "", :type => "email"}/
+      %input.form-control{:name => "p", :placeholder => "Password", :required => "", :type => "password"}/
+      %button.btn.btn-primary.btn-block.btn-large{:type => "submit"} Log me in
+      %a.forgot-pw{:href => "#"} Forgot password? We can help!
+#signup.overlay.overlay-content
+  %button.overlay-close{:type => "button"} Close
+  %section.login-part
+    %p.login-overlay
+      Sign up to Prestige
+    %form{:method => "post"}
+      %input.form-control{:name => "email", :placeholder => "Email", :required => "", :type => "text"}/
+      %input.form-control{:name => "pw", :placeholder => "Password", :required => "", :type => "password"}/
+      %input.form-control{:name => "repeat-pw", :placeholder => "Repeat Password", :required => "", :type => "password"}/
+      %button.btn.btn-primary.btn-block.btn-large{:type => "submit"} Get started
+      %p.disclaimer
+        By signing up, you agree with our
+        %a{:href => "#"} Terms of Service
+        \&
+        %a{:href => "#"} Privacy Policy

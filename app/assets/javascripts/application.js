@@ -10,8 +10,19 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
+//= require modernizr
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require bootstrap
+//= require bootstraps
+//= require classy
+//= require owlcarousel
+//= require scrollReveal
+//= require scrollTo
+//= require nav
+//= require imgload
+//= require isotope
+//= require magnificpop
+//= require bootvalidate
 //= require_tree .
