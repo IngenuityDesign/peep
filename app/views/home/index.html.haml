@@ -32,7 +32,8 @@
             %li
               %a.signup{:href => "#"} Sign up
 #intro
-  .item.background-cover{:style => "background: url('img/bg-featuredapp1.jpg')"}
+  .item.background-cover
+    %video#big-video-vid_html5_api.vjs-tech{:autoplay => "true", :loop => "false", "data-setup" => "{}", :preload => "auto", :src => 'https://s3.amazonaws.com/david-ellis/Altar_No_Sound.webm', :style => "position: absolute; right:70%; margin-right: -70%;min-height: 100%; min-width:100%", "webkit-playsinline" => ""}
     .container
       .row
         .carousel-caption-center.colour-white
@@ -251,12 +252,12 @@
       .col-lg-12
         .col-sm-3.col-md-3
           .footer-logo
-            %h2 Prestige
+            %h2 peep
             %p
-              1024 Main Street, Vancouver BC
+              23 S Main Street, South Norwalk CT
               %br +1 (123) 456-7890
             %br
-              %p.muted © 2013 Prestige Inc.
+              %p.muted © 2014 peep Mobile Digital, Inc.
               %a{:href => "#"} Terms of Service
               %a{:href => "#"} Privacy
         .col-sm-3.col-md-3
@@ -302,17 +303,17 @@
   %button.overlay-close{:type => "button"} Close
   %section.login-part
     %p.login-overlay
-      Log In
+      Sign In
     %form{:method => "post"}
       %input.form-control{:name => "u", :placeholder => "Email", :required => "", :type => "email"}/
       %input.form-control{:name => "p", :placeholder => "Password", :required => "", :type => "password"}/
       %button.btn.btn-primary.btn-block.btn-large{:type => "submit"} Log me in
-      %a.forgot-pw{:href => "#"} Forgot password? We can help!
+      %a.forgot-pw{:href => "#"} Forgot password? Click here!
 #signup.overlay.overlay-content
   %button.overlay-close{:type => "button"} Close
   %section.login-part
     %p.login-overlay
-      Sign up to Prestige
+      Sign Up
     %form{:method => "post"}
       %input.form-control{:name => "email", :placeholder => "Email", :required => "", :type => "text"}/
       %input.form-control{:name => "pw", :placeholder => "Password", :required => "", :type => "password"}/
