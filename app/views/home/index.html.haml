@@ -32,8 +32,8 @@
             %li
               %a.signup{:href => "#"} Sign up
 #intro
-  .item.background-cover
-    %video#big-video-vid_html5_api.vjs-tech{:autoplay => "true", :loop => "false", "data-setup" => "{}", :preload => "auto", :src => 'https://s3.amazonaws.com/david-ellis/Altar_No_Sound.webm', :style => "position: absolute; right:70%; margin-right: -70%;min-height: 100%; min-width:100%", "webkit-playsinline" => ""}
+  .item.background-cover 
+    / %video#vid{:id => "vidtag", :style => "position: absolute; right:70%; margin-right: -70%;min-height: 100%; min-width:100%", :autoplay => "", :preload => "auto", :loop => "", :src => "https://s3.amazonaws.com/david-ellis/Altar_No_Sound.webm", :type => "video/webm"}
     .container
       .row
         .carousel-caption-center.colour-white
@@ -45,23 +45,30 @@
             %br
             %span.gr one 
             %span place.
-          %p Donec sed odio dui. Etiam porta sem malesuada magna sem mollis sed odio dui malesuada euismod.
+          %p With Peep, friends and family can access photos captured at an event, no matter who took the picture, anytime, anywhere.
           %p
-            %a.btn.btn-lg.btn-primary.signup{:href => "#", :role => "button"} Get started
+            %a.btn.btn-lg.btn-primary.scroll{:href => "#about", :role => "button"} Learn More
     .overlay-bg
+.phone2= image_tag('android.png')
+.phone1= image_tag('iphone.png')
 .introbottomcontainer
   .container
     .row
-      .col-md-6
+      .col-md-5
         %h1 GET INVITED
         %h2 Sign up for our newsletter
-      .col-md-6
+      .col-md-5
+        %form{:method => "post"}
+          %input.form-control{:name => "u", :placeholder => "Enter your email address", :required => "", :type => "email"}
+      .col-md-2
+        %button.btn.btn-primary.btn-block.btn-large{:type => "submit"} Subscribe Now
+
         
 %section#about.content.text-center.light
   .container
     .row
       .col-lg-12.overlay-text
-        %h2 Prestige helps you escape the daily grind
+        %h2 How does it work!?
     .row
       .col-sm-4.text-center.overlay-text.icons
         .icon-wrapper
@@ -250,14 +257,14 @@
   .container
     .row
       .col-lg-12
-        .col-sm-3.col-md-3
+        .col-sm-4.col-md-4
           .footer-logo
-            %h2 peep
-            %p
-              23 S Main Street, South Norwalk CT
-              %br +1 (123) 456-7890
+            %h2= image_tag('logo_white.png')
             %br
-              %p.muted © 2014 peep Mobile Digital, Inc.
+            %p 23 S Main Street, South Norwalk CT
+            / %br +1 (123) 456-7890
+            %br
+              %p.muted ©2014 peep Mobile Digital, Inc.
               %a{:href => "#"} Terms of Service
               %a{:href => "#"} Privacy
         .col-sm-3.col-md-3
@@ -267,8 +274,8 @@
               %a{:href => "#"} Product for iOS
             %li
               %a{:href => "#"} Product for Android
-            %li
-              %a{:href => "#"} Product for Windows
+            / %li
+            /   %a{:href => "#"} Product for Windows
         .col-sm-3.col-md-3
           %h3 Company
           %ul.list-unstyled
@@ -280,15 +287,15 @@
               %a{:href => "#"}
                 Jobs&emsp;
                 %span.label.label-info We're hiring!
-        .col-sm-3.col-md-3
-          %h3 Documentation
+        .col-sm-2.col-md-2
+          %h3 Social
           %ul.list-unstyled
             %li
-              %a{:href => "#"} Product Help
+              %a{:href => "#"} Facebook
             %li
-              %a{:href => "#"} Developer API
+              %a{:href => "#"} Twitter
             %li
-              %a{:href => "#"} Product Markdown
+              %a{:href => "#"} Google +
     .row
       .col-lg-12.text-center
         %a.icon{:href => "http://www.twitter.com/dparrelli", :target => "_blank"}

@@ -55,13 +55,19 @@ $transpeepgreen: hsla(92, 45.2174%, 54.9020%, 0.8);
   color: $peepgreen;
 }
 
-.cbp-af-header .nav a.signup {
+.cbp-af-header .nav a.signup, .cbp-af-header .nav a.login {
   color: #ccc !important;
+  pointer-events: none;
+  display: none;
 }
 
 #intro .carousel-caption-center p, #intro-video .carousel-caption-center p {
   text-align: left !important;
   margin: 0px 20em 0px 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  font-size: 1.3em;
+  line-height: 1.4;
 }
 
 #intro .carousel-caption-center h1, #intro-video .carousel-caption-center h1 {
@@ -102,7 +108,32 @@ $darkerpeep: hsla(97, 46.4286%, 43.9216%, 1.0000);
     line-height: 1.1;
     color: #fff;
     letter-spacing: -0.015em;
-    padding-top: 30px;
+    padding-top: 40px;
+    font-size: 40px;
+  }
+  h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    color: #fff;
+    margin-top: -10px;
+    font-size: 1.65em;
+  }
+  input {
+    width: 100%;
+    margin-top: 70px;
+    background: white;
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 1.2em;
+    color: #4c4c4c;
+    border: 2px solid white;
+    border-radius: 4px;
+  }
+  button[type='submit'] {
+    padding: 17px;
+    margin-top: 70px;
+    font-size: 1.2em;
   }
 }
 
@@ -111,6 +142,44 @@ $darkerpeep: hsla(97, 46.4286%, 43.9216%, 1.0000);
 }
 
 .item.background-cover { 
-  background: image-url("bg-featuredapp1.jpg");
+  background: image-url("slide-2.jpg") no-repeat;
+  background-size: cover;
 }
 
+.phone1 {
+  position: absolute;
+  left: 66%;
+  bottom: -300px;
+  -webkit-transition: all 1.3s ease-in-out;
+     -moz-transition: all 1.3s ease-in-out;
+          transition: all 1.3s ease-in-out;
+}
+
+.phone2 {
+  position: absolute;
+  left: 54%;
+  bottom: -305px;
+  -webkit-transition: all 1.3s ease-in-out;
+     -moz-transition: all 1.3s ease-in-out;
+          transition: all 1.3s ease-in-out;
+}
+
+.slideUp{
+  bottom: 200px;    
+}
+
+#intro .carousel-caption-center, #intro-video .carousel-caption-center {
+  margin: 23% 20px;
+}
+
+video#bgvid {
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+  background: image-url("bg-featuredapp1.jpg") no-repeat;
+  background-size: cover;
+}
+
+#pricing .plan .plan-cta .plan-buy .btn:hover {
+  background: #68a49f;
+}
