@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140410111414) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "roles", force: true do |t|
     t.string   "name"
     t.integer  "resource_id"
@@ -21,8 +24,8 @@ ActiveRecord::Schema.define(version: 20140410111414) do
     t.datetime "updated_at"
   end
 
-  add_index "roles", ["name", "resource_type", "resource_id"], name: "index_roles_on_name_and_resource_type_and_resource_id"
-  add_index "roles", ["name"], name: "index_roles_on_name"
+  add_index "roles", ["name", "resource_type", "resource_id"], name: "index_roles_on_name_and_resource_type_and_resource_id", using: :btree
+  add_index "roles", ["name"], name: "index_roles_on_name", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "name"
@@ -38,6 +41,6 @@ ActiveRecord::Schema.define(version: 20140410111414) do
     t.integer "role_id"
   end
 
-  add_index "users_roles", ["user_id", "role_id"], name: "index_users_roles_on_user_id_and_role_id"
+  add_index "users_roles", ["user_id", "role_id"], name: "index_users_roles_on_user_id_and_role_id", using: :btree
 
 end

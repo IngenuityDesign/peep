@@ -13,7 +13,7 @@ gem 'figaro'
 gem 'haml-rails'
 gem 'omniauth'
 gem 'omniauth-facebook'
-
+gem 'pg'
 gem 'rolify'
 gem 'simple_form'
 gem 'thin'
@@ -25,7 +25,6 @@ group :development do
   gem 'hub', :require=>nil
   gem 'quiet_assets'
   gem 'rails_layout'
-  gem 'sqlite3'
 end
 group :development, :test do
   gem 'rspec-rails'
@@ -36,6 +35,5 @@ group :test do
 end
 
 group :production do
-  gem 'pg'
   gem 'rails_12factor'
 end
