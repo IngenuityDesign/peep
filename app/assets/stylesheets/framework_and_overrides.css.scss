@@ -96,13 +96,13 @@ $darkerpeep: hsla(97, 46.4286%, 43.9216%, 1.0000);
 
 .introbottomcontainer {
   height: 200px;
-  margin-top: -200px;
   position: absolute;
   left: 0px;
   width: 100%;
   background: #89c058;
   z-index: 58;
   overflow: visible;
+  bottom: -4px;
   h1 {
     font-weight: 800;
     line-height: 1.1;
@@ -149,7 +149,7 @@ $darkerpeep: hsla(97, 46.4286%, 43.9216%, 1.0000);
 .phone1 {
   position: absolute;
   left: 66%;
-  bottom: -300px;
+  bottom: -350px;
   -webkit-transition: all 1.3s ease-in-out;
      -moz-transition: all 1.3s ease-in-out;
           transition: all 1.3s ease-in-out;
@@ -158,7 +158,7 @@ $darkerpeep: hsla(97, 46.4286%, 43.9216%, 1.0000);
 .phone2 {
   position: absolute;
   left: 54%;
-  bottom: -305px;
+  bottom: -345px;
   -webkit-transition: all 1.3s ease-in-out;
      -moz-transition: all 1.3s ease-in-out;
           transition: all 1.3s ease-in-out;
@@ -282,4 +282,30 @@ border: 1px solid #FFF;
 .navbar .navbar-nav a {
 border-radius: 3px;
 display: none;
+}
+
+body {
+  max-height: 100%;
+  overflow: hidden;
+}
+
+
+.introbottomcontainer h1 {
+  padding-top: 20px;
+}
+
+.arrowhead {
+  top: 46px;
+}
+
+.introbottomcontainer input {
+  margin-top: 50px;
+}
+
+.introbottomcontainer button[type='submit'] {
+  margin-top: 50px;
+}
+
+.introbottomcontainer {
+  height: 160px;
 }

@@ -1,8 +1,8 @@
 var ready;
 ready = function() {
-    $(".phone1").css({'bottom':'190px'});
+    $(".phone1").css({'bottom':'135px'});
   setTimeout(function (){
-    $(".phone2").css({'bottom':'140px'});
+    $(".phone2").css({'bottom':'95px'});
   }, 500);
   
   isotope();
