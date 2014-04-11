@@ -116,7 +116,7 @@ $darkerpeep: hsla(97, 46.4286%, 43.9216%, 1.0000);
     font-weight: 200;
     color: #fff;
     margin-top: -10px;
-    font-size: 1.65em;
+    font-size: 1.85em;
   }
   input {
     width: 100%;
@@ -182,4 +182,99 @@ video#bgvid {
 
 #pricing .plan .plan-cta .plan-buy .btn:hover {
   background: #68a49f;
+}
+
+.arrowhead {
+  position: absolute;
+  height: 66px;
+  width: 30px;
+  border-right: 7px solid #fff;
+  right: 50px;
+  top: 66px;
+}
+
+.caret {
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  top: 19px;
+  right: -25px;
+  vertical-align: middle;
+  border-left: 16px solid #FFF;
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+}
+
+.download-area {
+  display: inline-block;
+  float: left;
+  margin-top: 45px;
+}
+
+.btn-group {
+margin-left: 40px;
+}
+
+.btn-group, .btn-group-vertical {
+position: relative;
+display: inline-block;
+vertical-align: middle;
+}
+.list-inline {
+padding-left: 0;
+list-style: none;
+margin-left: -5px;
+}
+ul, ol {
+margin-top: 0;
+margin-bottom: 10px;
+}
+
+.btn-group li {
+padding: 0;
+margin-bottom: 15px;
+}
+
+.list-inline>li {
+display: inline-block;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+.btn-group li a {
+background-color: #060606;
+background-repeat: no-repeat;
+background-position: left top;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+-ms-border-radius: 6px;
+-o-border-radius: 6px;
+border-radius: 6px;
+-moz-background-clip: padding;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+display: block;
+width: 200px;
+height: 60px;
+text-indent: -9999px;
+margin-right: 20px;
+opacity: 0.95;
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+border: 1px solid #FFF;
+&:hover {
+  opacity: 1.0;
+}
+}
+
+.btn-group li.ios-btn a {
+  background-image: image-url("appstore.png");
+}
+
+.btn-group li.android-btn a {
+  background-image: image-url("googleplay.png");
 }

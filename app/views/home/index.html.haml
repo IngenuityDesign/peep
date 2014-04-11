@@ -39,15 +39,22 @@
         .carousel-caption-center.colour-white
           %h1 
             %span.gr My 
-            %span pictures. 
+            %span photos. 
             %span.gr your 
-            %span pictures.
+            %span photos.
             %br
             %span.gr one 
             %span place.
           %p With Peep, friends and family can access photos captured at an event, no matter who took the picture, anytime, anywhere.
-          %p
-            %a.btn.btn-lg.btn-primary.scroll{:href => "#about", :role => "button"} Learn More
+          / %p
+          /   %a.btn.btn-lg.btn-primary.scroll{:href => "#about", :role => "button"} Learn More
+          .download-area
+            %ul.btn-group.list-inline
+              %li.ios-btn
+                %a{:href => "#"} Download from the App Store
+              %li.android-btn
+                %a{:href => "#"} Get it from Google Play
+            
     .overlay-bg
 .phone2= image_tag('android.png')
 .phone1= image_tag('iphone.png')
@@ -55,8 +62,10 @@
   .container
     .row
       .col-md-5
-        %h1 GET INVITED
-        %h2 Sign up for our newsletter
+        %h1 STAY IN THE LOOP
+        %h2 Sign up for our launch
+        .arrowhead
+          .caret
       .col-md-5
         %form{:method => "post"}
           %input.form-control{:name => "u", :placeholder => "Enter your email address", :required => "", :type => "email"}
