@@ -73,19 +73,23 @@ Peep::Application.configure do
   config.active_support.deprecation = :notify
 
   config.action_mailer.smtp_settings = {
-    address: "smtp.gmail.com",
+    address: 'smtp.sendgrid.net',
     port: 587,
-    domain: ENV["DOMAIN_NAME"],
+    domain: 'peepapp.com',
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: ENV["GMAIL_USERNAME"],
-    password: ENV["GMAIL_PASSWORD"]
+    user_name: ENV["SENDGRID_USERNAME"],
+    password: ENV["SENDGRID_PASSWORD"]
   }
+
+
+  config.action_mailer.default_url_options = { :host => 'peepdigitalmobile.herokuapp.com' }
   # ActionMailer Config
-  config.action_mailer.default_url_options = { :host => 'example.com' }
+  # Setup for production - deliveries, no errors raised
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default :charset => "utf-8"
 
 
   # Disable automatic flushing of the log to improve performance.

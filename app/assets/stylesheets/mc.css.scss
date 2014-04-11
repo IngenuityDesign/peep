@@ -18,3 +18,36 @@
 #mc_embed_signup #mce-success-response {color:#529214; display:none;}
 #mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
 #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+
+#mc_embed_signup {
+  background: transparent;
+}
+
+#mc_embed_signup input.email {
+  display: block;
+  padding: 8px 5px;
+  margin: 0 4% 10px 0;
+  text-indent: 5px;
+  width: 58%;
+  min-width: 130px;
+  border: 0px;
+  height: 40px;
+}
+
+#mc_embed_signup input.button {
+	display: block;
+	width: 35%;
+	margin: -49px 28px 4px 0 !important;
+	min-width: 90px;
+	float: right;
+	height: 40px;
+	background: #2b2d34;
+	color: #FFF;
+}
+
+#mc_embed_signup form {
+	display: block;
+	position: relative;
+	text-align: left;
+	padding: 57px 0 10px 3% !important;
+}

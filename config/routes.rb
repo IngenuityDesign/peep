@@ -1,4 +1,7 @@
 Peep::Application.routes.draw do
+
+  match '/cust',   to: 'customers#newsletter',  :as => :newsletter_sender, via: [:get, :post]
+
   root :to => "home#index"
   resources :users, :only => [:index, :show, :edit, :update ]
   get '/auth/:provider/callback' => 'sessions#create'
