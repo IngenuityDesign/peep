@@ -4,6 +4,9 @@ ready = function() {
   setTimeout(function (){
     $(".phone2").css({'bottom':'95px'});
   }, 500);
+    $('#example').popover();
+    $('#appstore').popover();
+    $('#gplay').popover();
   
   isotope();
   signupOverlay();
@@ -13,4 +16,3 @@ ready = function() {
 
 $(document).ready(ready);
 $(document).on('page:load', ready);
-

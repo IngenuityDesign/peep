@@ -51,9 +51,9 @@
           .download-area
             %ul.btn-group.list-inline
               %li.ios-btn
-                %a{:href => "#"} Download from the App Store
+                %a{:href => "#", "onClick" => "return false;", :id => "appstore", :rel => "popover", "data-content" => "This is the body of Popover",  "data-placement" => "bottom" } Download from the App Store
               %li.android-btn
-                %a{:href => "#"} Get it from Google Play
+                %a{:href => "#{}", "onClick" => "return false;", :id => "gplay", :rel => "popover", "data-content" => "This is the body of Popover", "data-placement" => "bottom" } Get it from Google Play
             
     .overlay-bg
 .phone2= image_tag('android.png')
