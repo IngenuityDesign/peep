@@ -278,3 +278,8 @@ border: 1px solid #FFF;
 .btn-group li.android-btn a {
   background-image: image-url("googleplay.png");
 }
+
+.navbar .navbar-nav a {
+border-radius: 3px;
+display: none;
+}
