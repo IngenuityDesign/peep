@@ -316,5 +316,33 @@ body {
   font-size: 1.2em;
 }
 
+#intro .carousel-caption-center, #intro-video .carousel-caption-center {
+  margin: 15% 20px;
+}
+
+.tooltip-inner {
+  color: #FFF;
+  border: solid 1px #fff;
+}
+
+#intro .carousel-caption-center h3, #intro-video .carousel-caption-center h3 {
+  text-align: left !important;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  font-size: 2.2em;
+  font-weight: 800;
+}
+
+.tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-bottom-color: #FFF;
+  border-width: 0 5px 5px;
+}
+
+.download-area {
+  margin-top: 20px;
+}
 
 

@@ -32,8 +32,8 @@
             %li
               %a.signup{:href => "#"} Sign up
 #intro
-  .item 
-    %video#vid{:id => "vidtag", :style => "position: absolute; right:70%; margin-right: -70%;min-height: 100%; min-width:100%", :autoplay => "", :preload => "auto", :loop => "", :src => "https://s3.amazonaws.com/peep-bucket/peep3.webm", :type => "video/webm"}
+  .item.background-cover
+    %video#vid{:id => "vidtag", :style => "position: absolute; right:70%; margin-right: -70%;min-height: 100%; min-width:100%", :autoplay => "", :preload => "auto", :loop => "", :src => "https://s3.amazonaws.com/peep-bucket/peep3.webm", :src => "https://s3.amazonaws.com/peep-bucket/peep3.mp4", :type => "video/webm"}
     .container
       .row
         .carousel-caption-center.colour-white
@@ -45,15 +45,18 @@
             %br
             %span.gr one 
             %span place.
-          %p With Peep, friends and family can access photos captured at an event, no matter who took the picture, anytime, anywhere.
+          %p With peep, friends and family can access photos captured at an event, no matter who took the picture, anytime, anywhere.
+          %h3 
+            %span COMING SOON!
           / %p
           /   %a.btn.btn-lg.btn-primary.scroll{:href => "#about", :role => "button"} Learn More
           .download-area
             %ul.btn-group.list-inline
               %li.ios-btn
-                %a{:href => "#", "onClick" => "return false;", :id => "appstore", "data-toggle" => "tooltip", "title" => "Peep will be available on both iOS and Android Platforms. Check back soon!",  "data-placement" => "bottom" } Download from the App Store
+                %a{:href => "#", "onClick" => "return false;", :id => "appstore", "data-toggle" => "tooltip", "title" => "Peep will be available on both iOS and Android.",  "data-placement" => "bottom" } Download from the App Store
               %li.android-btn
-                %a{:href => "#", "onClick" => "return false;", :id => "gplay", "data-toggle" => "tooltip", "title" => "Peep will be available on both iOS and Android Platforms. Check back soon!", "data-placement" => "bottom" } Get it from Google Play
+                %a{:href => "#", "onClick" => "return false;", :id => "gplay", "data-toggle" => "tooltip", "title" => "Peep will be available on both iOS and Android.", "data-placement" => "bottom" } Get it from Google Play
+
             
     .overlay-bg
 .phone2= image_tag('android.png')
