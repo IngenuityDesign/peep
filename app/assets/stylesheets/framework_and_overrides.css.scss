@@ -323,6 +323,12 @@ body {
 .tooltip-inner {
   color: #FFF;
   border: solid 1px #fff;
+  margin-top: -68px;
+  background: $peepgreen;
+  min-height: 60px;
+  pointer-events: none;
+  opacity: 1.0;
+  border-radius: 6px;
 }
 
 #intro .carousel-caption-center h3, #intro-video .carousel-caption-center h3 {
@@ -348,6 +354,16 @@ body {
 .introphonehome {
     display: none;
   }
+
+@media (max-width: 1200px) {
+  .arrowhead {
+    display: none;
+  }
+
+  #intro .carousel-caption-center h1, #intro-video .carousel-caption-center h1 {
+    font-size: 2.4em;
+  }
+}
 
 @media (max-width: 767px) {
   .phone1, .phone2 {
@@ -394,3 +410,8 @@ body {
   }
 
 }
+
+
+
+
+
