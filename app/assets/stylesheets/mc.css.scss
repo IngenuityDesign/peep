@@ -61,7 +61,11 @@
 $peepgreen:   hsla(92, 45.2174%, 54.9020%, 1.0000);
 
 
+
 @media (max-width: 600px) {
+    #mc_embed_signup {
+	  margin-top:-100px;
+	}
 	#mc_embed_signup input.button {
 		width: 16% !important;
 		margin: -49px 15px 4px 0 !important;
@@ -72,4 +76,11 @@ $peepgreen:   hsla(92, 45.2174%, 54.9020%, 1.0000);
     .navbar-toggle {
 		display: none;
 	}
+}
+
+@media (max-width: 400px) {
+   #mc_embed_signup {
+	  margin-top: 0px;
+	}
+
 }
