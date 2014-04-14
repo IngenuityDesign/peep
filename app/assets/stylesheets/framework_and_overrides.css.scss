@@ -141,10 +141,7 @@ $darkerpeep: hsla(97, 46.4286%, 43.9216%, 1.0000);
   border-radius: 4px;
 }
 
-.item.background-cover { 
-  background: image-url("dance-party.jpg") no-repeat;
-  background-size: cover;
-}
+
 
 .phone1 {
   position: absolute;
@@ -377,7 +374,7 @@ body {
     text-align: center !important;
     text-transform: uppercase;
     letter-spacing: -0.015em;
-    font-size: 2.4em;
+    font-size: 2.0em;
     padding-top: 25px;
   }
 
@@ -391,7 +388,7 @@ body {
 
   #intro .carousel-caption-center h3, #intro-video .carousel-caption-center h3 {
     text-align: center !important;
-    font-size: 1.8em;
+    font-size: 1.3em;
   }
 
   .overlay-bg {
@@ -407,6 +404,10 @@ body {
   body {
     max-height: 100%;
     overflow: scroll;
+  }
+
+  .list-inline > li {
+    padding-left: 20px;
   }
 
 }
