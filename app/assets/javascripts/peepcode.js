@@ -3,7 +3,7 @@ ready = function() {
     $(".phone1").css({'bottom':'135px'});
   setTimeout(function (){
     $(".phone2").css({'bottom':'95px'});
-  }, 500);
+  }, 1000);
     $('#example').tooltip();
     $('#appstore').tooltip();
     $('#gplay').tooltip();
