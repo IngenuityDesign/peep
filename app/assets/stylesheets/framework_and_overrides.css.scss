@@ -404,6 +404,8 @@ body {
   body {
     max-height: 100%;
     overflow: scroll;
+    background: image-url("dbd.jpg") no-repeat;
+    background-size: cover;
   }
 
   .list-inline > li {
@@ -419,7 +421,12 @@ body {
 
 }
 
+h1 {
+  color: #FFF;
+}
 
-
+h2 {
+  color: #FFF;
+}
 
 

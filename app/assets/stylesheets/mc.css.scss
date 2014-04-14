@@ -64,14 +64,14 @@ $peepgreen:   hsla(92, 45.2174%, 54.9020%, 1.0000);
 
 @media (max-width: 600px) {
     #mc_embed_signup {
-	  margin-top:-100px;
+	  margin-top:-50px;
 	}
 	#mc_embed_signup input.button {
 		width: 16% !important;
 		margin: -49px 15px 4px 0 !important;
 	}
 	body {
-      background: $peepgreen;
+      background: image-url("dbd.jpg") no-repeat;
     }
     .navbar-toggle {
 		display: none;
@@ -83,4 +83,26 @@ $peepgreen:   hsla(92, 45.2174%, 54.9020%, 1.0000);
 	  margin-top: 0px;
 	}
 
+	#intro .carousel-caption-center, #intro-video .carousel-caption-center {
+       margin: 15% 35px;
+    }
+
+    .list-inline > li {
+		padding-left: 0px;
+		margin-left: -20px;
+	}
+
+
+}
+
+.introphonehome {
+   background: $peepgreen;
+   h1 {
+     font-size: 24px;
+     text-align: center !important;
+   }
+   h2 {
+     font-size: 15px;
+     text-align: center !important;
+   }
 }
