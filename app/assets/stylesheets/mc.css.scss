@@ -137,3 +137,7 @@ $peepgreen:   hsla(92, 45.2174%, 54.9020%, 1.0000);
     background-size: 9%;
   }
 }
+
+.btn-group li.ios-btn a {
+  pointer-events: none;
+}
