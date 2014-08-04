@@ -120,20 +120,20 @@ $peepgreen:   hsla(92, 45.2174%, 54.9020%, 1.0000);
 
 .flagtext {
   background: url("us_flag.png");
-  background-size: 25%;
+  background-size: 12%;
   background-repeat: no-repeat;
   background-position-x: 0px;
-  background-position-y: 17px;
-  padding-left: 136px;
+  background-position-y: 27px;
+  padding-left: 87px;
 }
 
 .introbottomcontainer h1 {
-
-  font-size: 27px;
+  margin-top: 38px;
+  font-size: 39px;
 }
 
 @media (max-width: 992px) {
   .flagtext {
-    background-size: 15%;
+    background-size: 9%;
   }
 }
