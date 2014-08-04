@@ -1,0 +1,231 @@
+// color constants:scss
+$PRIMARY-DARK-COLOR: #292929;
+$PRIMARY-DARK-HOVER-COLOR: #5c5c5c;
+$PRIMARY-DARK-COLOR-RGBA_full: rgba(47, 46, 43, 1.0);
+$PRIMARY-DARK-COLOR-RGBA_half: rgba(47, 46, 43, 0.5);
+$PRIMARY-DARK-COLOR-RGBA_trans: rgba(47, 46, 43, 0.1);
+$PRIMARY-LIGHT-COLOR: #ffffff;
+$PRIMARY-GREEN-COLOR: #86c150;
+$LIGHT-GREEN-COLOR: #68ba1a;
+$PRIMARY-ORANGE-COLOR: #ee8d27;
+$SETTINGS-DARK-COLOR: #292929;
+$SETTINGS-DIVIDER-COLOR: #181818;
+$WARNING_RED: #ff1c25;
+$SETTINGS-LIGHT-GRAY: #414141;
+
+// Fonts:scss
+@font-face{
+    font-family: 'BPreplay';
+    src:  url('BPreplay.woff') format('woff'),
+          url('BPreplay.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'BPreplay-Bold';
+    src:  url('BPreplay-Bold.woff') format('woff'),
+          url('BPreplay-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PeepIcons';
+    src: url('Peepfont.woff') format('woff'),
+         url('Peepfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$PEEP-ICONS: 'PeepIcons';
+$PEEP-FONT: 'BPreplay';
+$PEEP-FONT-BOLD: 'BPreplay-Bold';
+
+// Font Icons
+.peep_font_icon {
+  font-family: $PEEP-ICONS;
+  font-size: 1.00em;
+  color: $PRIMARY-LIGHT-COLOR;
+  display: inline;
+  transition: all 0.3s linear;
+  text-decoration: none;
+
+  &:hover {
+    color: $PRIMARY-GREEN-COLOR;
+    text-decoration: none;
+  }
+  
+}
+
+.peep-chev-right:before {
+  content: "\e600";
+}
+.peep-logo:before {
+  content: "\e601";
+}
+.peep-capture:before {
+  content: "\e602";
+}
+.peep-private-circ:before {
+  content: "\e603";
+}
+.peep-import:before {
+  content: "\e604";
+}
+.peep-camera:before {
+  content: "\e605";
+}
+.peep-invite:before {
+  content: "\e606";
+}
+.peep-star:before {
+  content: "\e607";
+}
+.peep-star-filled:before {
+  content: "\e608";
+}
+.peep-chev-left:before {
+  content: "\e609";
+}
+.peep-knock-locked:before {
+  content: "\e60a";
+}
+.peep-search:before {
+  content: "\e60b";
+}
+.peep-unlocked:before {
+  content: "\e60c";
+}
+.peep-locked:before {
+  content: "\e60d";
+}
+.peep-private-peep:before {
+  content: "\e60e";
+}
+.peep-user:before {
+  content: "\e60f";
+}
+.peep-hint:before {
+  content: "\e610";
+}
+.peep-unlocked-circ:before {
+  content: "\e611";
+}
+.peep-check:before {
+  content: "\e612";
+}
+.peep-check-circ:before {
+  content: "\e613";
+}
+.peep-plus-circ:before {
+  content: "\e614";
+}
+.peep-circ:before {
+  content: "\e615";
+}
+.peep-vid:before {
+  content: "\e616";
+}
+.peep-cam:before {
+  content: "\e617";
+}
+.peep-plus:before {
+  content: "\e618";
+}
+.peep-edit:before {
+  content: "\e619";
+}
+.peep-flash:before {
+  content: "\e61a";
+}
+.peep-flip-cam:before {
+  content: "\e61b";
+}
+.peep-close-x:before {
+  content: "\e61c";
+}
+.peep-chev-up:before {
+  content: "\e61d";
+}
+.peep-thumbs-up:before {
+  content: "\e61e";
+}
+.peep-trash:before {
+  content: "\e61f";
+}
+.peep-download:before {
+  content: "\e620";
+}
+.peep-send-to:before {
+  content: "\e621";
+}
+.peep-warn:before {
+  content: "\e622";
+}
+.peep-plus-framed:before {
+  content: "\e623";
+}
+.peep-chev-down:before {
+  content: "\e624";
+}
+.peep-soc-apple:before {
+  content: "\e625";
+}
+.peep-soc-appstore:before {
+  content: "\e626";
+}
+.peep-soc-twitter:before {
+  content: "\e627";
+}
+.peep-soc-facebook:before {
+  content: "\e628";
+}
+.peep-soc-google:before {
+  content: "\e629";
+}
+.peep-soc-android:before {
+  content: "\e62a";
+}
+.peep-hamburger:before {
+  content: "\e62b";
+}
+
+// Icons
+$PRIVATE-EYE: "../images/icons/features/private_eye.png";
+$PLUS-SIGN: "../images/icons/features/plus.png";
+$MAGNIFYING-GLASS: "../images/icons/features/search.png";
+$ADD-PERSON: "../images/icons/features/add_person.png";
+$CAMERA: "../images/icons/features/camera.png";
+$SWIPE-TO-SHARE: "../images/icons/features/swipe_to_share.png";
+$EXPORT-ARROW: "../images/icons/features/export_arrow.png";
+$IMPORT-ARROW: "../images/icons/features/import_arrow.png";
+$TRASH-CAN: "../images/icons/features/trash_can.png";
+$MAGNIFYING-GLASS-PLUS: "../images/icons/features/search_plus.png";
+$CLOUD: "../images/icons/features/cloud.png";
+$MULTI-SELECT: "../images/icons/features/multi_select.png";
+
+// Background Icons
+
+$PRIVATE-EYE-BACKGROUND: url($PRIVATE-EYE); 
+$PLUS-SIGN-BACKGROUND: url($PLUS-SIGN);
+$MAGNIFYING-GLASS-BACKGROUND: url($MAGNIFYING-GLASS);
+$ADD-PERSON-BACKGROUND: url($ADD-PERSON);
+$CAMERA-BACKGROUND: url($CAMERA);
+$SWIPE-TO-SHARE-BACKGROUND: url($SWIPE-TO-SHARE);
+$EXPORT-ARROW-BACKGROUND: url($EXPORT-ARROW);
+$IMPORT-ARROW-BACKGROUND: url($IMPORT-ARROW);
+$TRASH-CAN-BACKGROUND: url($TRASH-CAN);
+$MAGNIFYING-GLASS-PLUS-BACKGROUND: url($MAGNIFYING-GLASS-PLUS);
+$CLOUD-BACKGROUND: url($CLOUD);
+$MULTI-SELECT-BACKGROUND: url($MULTI-SELECT);
+
+// SIZES
+
+$CONTENT-WIDTH: 90%;
+$HEADER-HEIGHT: 100px;
+$FOOTER-HEIGHT: 100px;
+
+// Z-INDEXES
+
+$CAROUSEL-CAPTION-Z: 10;
+$PHONE-ANIMATION-Z: 999;
+$ANI-HOLDER-Z: 1000;
+$FOOTER-Z: 1001;
+$SPNAV-Z: 1002;
