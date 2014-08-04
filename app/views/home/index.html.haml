@@ -4,13 +4,13 @@
     .bounce2
     .bounce3
 .socialize
-  %a{:href => "http://facebook.com/peep"}
+  %a{:href => "http://facebook.com/peep", :target => "_blank"}
     .peep-soc-facebook.peep_font_icon
-  %a{:href => "https://twitter.com/_peep_app"}
+  %a{:href => "https://twitter.com/_peep_app", :target => "_blank"}
     .peep-soc-twitter.peep_font_icon
   / %a{:href => "http://google.com"}
   /   .peep-soc-google.peep_font_icon
-  %a{:href => "http://instagram.com/peep_app"}
+  %a{:href => "http://instagram.com/peep_app", :target => "_blank"}
     .icon-instagram
 .navbar-wrapper.cbp-af-header
   .container
@@ -83,13 +83,17 @@
                       %input{:name => "b_b97b971a977910f878ba92a94_f781744731", :type => "text", :value => ""}/
                     .clear
                       %input#mc-embedded-subscribe.button{:name => "subscribe", :type => "submit", :value => "Sign Up"}/
-.phone2= image_tag('android.png')
-.phone1= image_tag('iphone.png')
+.phone2= image_tag('android2.png')
+.phone1= image_tag('iphone3.png')
 .introbottomcontainer
   .container
     .row
       .col-md-5
-        %h1 COMING SOON TO THE USA!
+        %h1.flagtext
+          %span
+          COMING 
+          %br
+          SOON!
         / %h2 Sign up for our launch
         .arrowhead
           .caret

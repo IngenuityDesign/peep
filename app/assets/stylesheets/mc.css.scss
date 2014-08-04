@@ -117,3 +117,23 @@ $peepgreen:   hsla(92, 45.2174%, 54.9020%, 1.0000);
     text-decoration: none;
   }
 }
+
+.flagtext {
+  background: url("us_flag.png");
+  background-size: 25%;
+  background-repeat: no-repeat;
+  background-position-x: 0px;
+  background-position-y: 17px;
+  padding-left: 136px;
+}
+
+.introbottomcontainer h1 {
+
+  font-size: 27px;
+}
+
+@media (max-width: 992px) {
+  .flagtext {
+    background-size: 15%;
+  }
+}
