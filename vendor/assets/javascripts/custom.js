@@ -240,8 +240,9 @@ function scrollAnchor() {
 function signupOverlay() {
   var container = document.querySelector( 'div.container' ),
     triggerBttn = document.getElementsByClassName( 'signup' ),
-    overlay = document.querySelector( 'div#signup' ),
-    closeBttn = overlay.querySelector( 'button.overlay-close' );
+    overlay = document.querySelector( 'div#signup' );
+  if (!overlay) return;
+  var closeBttn = overlay.querySelector( 'button.overlay-close' );
     transEndEventNames = {
       'WebkitTransition': 'webkitTransitionEnd',
       'MozTransition': 'transitionend',
@@ -292,8 +293,9 @@ function signupOverlay() {
 function loginOverlay() {
   var container = document.querySelector( 'div.container' ),
     triggerBttn = document.querySelector( '.login' ),
-    overlay = document.querySelector( 'div#login' ),
-    closeBttn = overlay.querySelector( 'button.overlay-close' );
+    overlay = document.querySelector( 'div#login' );
+  if (!overlay) return;
+  var closeBttn = overlay.querySelector( 'button.overlay-close' );
     transEndEventNames = {
       'WebkitTransition': 'webkitTransitionEnd',
       'MozTransition': 'transitionend',
