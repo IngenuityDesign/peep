@@ -30,8 +30,7 @@ jQuery(function ($) {
   form.on('submit', function (e) {
     var email = $('input[name="EMAIL"]', this).val() || "";
     if (validateEmail(email)) {
-      var response = $.getJSON( '/subscribe',
-      { email: email }, function( response, textStatus ) {
+      var response = $.getJSON( '/subscribe', { email: email }, function( response, textStatus ) {
         
         if (response.status == "ok") {
           // Successfully subscribed you to our mailing list
@@ -58,6 +57,8 @@ jQuery(function ($) {
 
         } // End response checking
 
+        alert (response.data.msg)
+
       }); // End getJSON 
 
     } else {
@@ -65,6 +66,8 @@ jQuery(function ($) {
       alert("Email is invalid");
     }
     
-    e.stopPropagation();
+    e.stopPropagation(); // Stop event from propagating to other AJAX call.
+
   })
+
 });
