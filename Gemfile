@@ -16,6 +16,7 @@ gem 'omniauth-facebook'
 gem 'rolify'
 gem 'simple_form'
 gem 'thin'
+gem 'mailchimp-api'
 
 group :development do
   gem 'better_errors'
